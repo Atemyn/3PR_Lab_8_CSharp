@@ -6,6 +6,8 @@ namespace _3PR_Lab_8_CSharp
 {
 	class Building
 	{
+		// Количество когда-либо построенных зданий.
+		private static int countOfBuildings = 0;
 		// Тип здания.
 		private string typeOfBuilding;
 		// Длина стороны основания.
@@ -29,6 +31,19 @@ namespace _3PR_Lab_8_CSharp
 			this.floorHeight = floorHeight;
 			this.floorAmount = floorAmount;
 			this.stabilityFactor = stabilityFactor;
+		}
+		// Конструктор.
+		public Building()
+		{
+			this.initBuilding();
+			countOfBuildings++;
+		}
+		// Название строительной компании.
+		public static string companyName = "Альянс";
+		// Статический метод по получению количества зданий.
+		public static int getCountOfBuildings()
+		{
+			return countOfBuildings;
 		}
 		/* Функция по выводу свойств экземпляра класса Building. */
 		public void getBuilding()

@@ -107,6 +107,12 @@ namespace _3PR_Lab_8_CSharp
 			firstB.getBuilding();
 			secondB.getBuilding();
 			/*...........................................*/
+
+			/* Использование статического метода и изменение статичсекого поля. */
+			Console.WriteLine("\nИспользование статического метода и изменение статичсекого поля: ");
+			Building.companyName = "Авангард";
+			Console.WriteLine("\nОбщее количество когда-либо построенных этой компанией зданий: " + Building.getCountOfBuildings());
+			secondB.getBuilding();
 		}
 	}
 }

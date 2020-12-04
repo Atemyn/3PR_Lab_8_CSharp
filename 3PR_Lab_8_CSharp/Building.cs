@@ -49,6 +49,8 @@ namespace _3PR_Lab_8_CSharp
 		public void getBuilding()
 		{
 			Console.WriteLine("Свойства данного здания:");
+			Console.WriteLine("Название строительной компании: " + companyName);
+			Console.WriteLine("Количество когда-либо построенных этой компанией зданий: " + countOfBuildings);
 			Console.WriteLine("Тип здания: " + typeOfBuilding);
 			Console.WriteLine("Длина стороны основания: " + sideLength);
 			Console.WriteLine("Высота фундамента: " + basementHeight);

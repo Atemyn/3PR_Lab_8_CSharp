@@ -99,7 +99,7 @@ namespace _3PR_Lab_8_CSharp
 				{
 					Console.WriteLine("Здание не смогло устоять и рухнуло!\n\n");
 					initBuilding();
-				}
+				} 
 			}
 			else
 			{
